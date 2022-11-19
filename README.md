@@ -8,6 +8,7 @@ I prefer not to spoil the secrets, so I won't show them here. But I'm sure you c
 | ------------- | -------------------------------- | -------------------------- |
 | 01            | ¡Arregla Twitter!                | [Solution](./challenge01/) |
 | 02            | ¡Atrapa a esos ciber criminales! | [Solution](./challenge02/) |
+| 03            | La zebra de colores              | [Solution](./challenge03/) |
 
 ## Run my solutions
 1. Clone the repo
