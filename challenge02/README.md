@@ -40,6 +40,12 @@ submit this is fine
 <details>
 <summary>Si haces click aquí te harás spoiler de la solución creada por mí. Hazlo bajo tu responsabilidad.</summary>
 
+La idea para solucionar este ejercicio fue recorrer el mensaje cifrado letra a letra (llamado en Go `rune`). Concatenamos los caracteres para conseguir números, que representan un valor ASCII.
+
+Como las letras del alfabeto están representadas seguidas unas detras de otra en orden alfabético en ASCII, lo menor que vamos a encontrar es la `a`, y lo mayor que vamos a encontrar es la `z`. Es decir que si el número que hemos obtenido concatenando caracteres está entre la `a` y la `z`, se trata de un caracter válido para ser descifrado.
+
+Por lo tanto, cada vez que encontremos un caracter válido, lo concatenamos al mensaje, y vaciamos el buffer (la variable `asciiCode`) que representa el caracter ASCII, para buscar el siguiente.
+
 ```go
 func ReadFile(path string) (string, error) {
 	dat, err := os.ReadFile(path)
@@ -81,4 +87,4 @@ func main() {
 }
 ```
 
-<details>
+</details>

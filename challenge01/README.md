@@ -49,6 +49,16 @@ submit 482@midudev
 <details>
 <summary>Si haces click aquí te harás spoiler de la solución creada por mí. Hazlo bajo tu responsabilidad.</summary>
 
+La idea para resolver este problema es tener un array con los campos necesasrios (en este caso `DATA_TO_BE_PRESENT`), y obtener de cada una de los usuarios, las claves.
+
+El problema tiene dos temas que resolver. El primero es el de obtener un usuario, que puede estar en una línea o en varias. Esto lo solucionamos leyendo el fichero como un array de lineas. Recorremos este array y cada vez que encuentramos una linea en blanco, añadimos ese usuario al array de usuarios.
+
+La segunda parte trata de obtener las claves, como todas las clave-valor están separadas por un espacio `" "`, es sencillo, se divide el usuario por espacios. Esta operación devuelve un array que recorreremos también, y dividiremos también, en este caso por dos puntos  `":"`. Ahora tendremos en la primera posición del array resultante la clave.
+
+Guardando el array de claves del usuario ya tendríamos el ejercicio casi acabado. Recorremos el array inicialmente mencionado `DATA_TO_BE_PRESENT`. Y si alguno de los valores de eset array no está presente en el usuario, el usuario es inválido.
+
+Esto lo hacemos con todos los usuarios y ya tendremos el resultado final.
+
 ```go
 var DATA_TO_BE_PRESENT = []string{"usr", "eme", "psw", "age", "loc", "fll"}
 
@@ -143,4 +153,4 @@ func main() {
 }
 ```
 
-<details>
+</details>
