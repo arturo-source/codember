@@ -1,5 +1,7 @@
 # Reto 2: ¡Atrapa a esos ciber criminales!
 
+> Esta plantilla ha sido creada por `wayaba`, puedes verla en el repositorio <https://github.com/wayaba/codember-2022>
+
 ## Problema
 
 Un grupo de ciber criminales están usando mensajes encriptados para comunicarse. El FBI nos ha pedido ayuda para descifrarlos.
